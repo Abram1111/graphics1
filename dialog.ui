@@ -340,6 +340,20 @@
           </widget>
          </item>
          <item>
+          <widget class="QPushButton" name="btn_do_search">
+           <property name="text">
+            <string>search</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_do_sort">
+           <property name="text">
+            <string>sort</string>
+           </property>
+          </widget>
+         </item>
+         <item>
           <widget class="QPushButton" name="btn_cancel">
            <property name="text">
             <string>cancel</string>

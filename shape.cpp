@@ -29,16 +29,4 @@ using namespace std;
     }
 
 
-class Line : public Shape {
-
-private:
-    double length;
-public:
-    void Setlength(double length) {
-        this->length = length;
-    }
-    double getlength() {
-        return length;
-    }
-};
 

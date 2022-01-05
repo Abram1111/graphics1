@@ -7,11 +7,14 @@ private:
     double radius;
       double perimeter;
 public:
-    void Setredius(double radius) ;
-
-    double getredius() ;
+      Circle(string name , string color , double radius , double perimeter);
+      Circle();
+    void Setradius(double radius) ;
+    double getperimeter2();
+    double getradius() ;
     void Setperimeter(double radius) ;
-    double getperimer() ;
+    double getperimeter() ;
+
 
 
 };

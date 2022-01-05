@@ -11,7 +11,8 @@ CONFIG += c++11
 SOURCES += \
     Circle.cpp \
     Line.cpp \
-    Rectangel.cpp \
+    Rectangle.cpp \
+    Sortshape.cpp \
     main.cpp \
     dialog.cpp \
     shape.cpp
@@ -21,6 +22,7 @@ HEADERS += \
     Line.h \
     Rectangle.h \
     Shape.h \
+    Sortshape.h \
     dialog.h
 
 FORMS += \

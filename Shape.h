@@ -3,6 +3,7 @@
 #include <iostream>
 using namespace std;
 #include <string>
+
 class Shape {
 private:
     string name;
@@ -10,6 +11,7 @@ private:
     double center_x;
     double center_y;
 public:
+
     void setName(string n);
     string getName();
     void setColor(string color);
@@ -18,6 +20,7 @@ public:
     double getCenter_x();
     void setCenter_y(double y) ;
     double getCenter_y() ;
+    virtual double getperimeter2()=0;
 
 
 };

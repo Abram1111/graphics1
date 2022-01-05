@@ -7,6 +7,11 @@
 #include<QGraphicsScene>
 #include<QMessageBox>
 #include<QGraphicsEllipseItem>
+#include<vector>
+#include"Shape.h"
+#include "Circle.h"
+#include "Rectangle.h"
+#include "Line.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Dialog; }
@@ -20,6 +25,10 @@ public:
     Dialog(QWidget *parent = nullptr);
     ~Dialog();
     int clc ;
+    vector<Shape*> shapes;
+    vector <Circle *> searchcircle;
+    vector <Rectangl *> searchrect;
+    vector <Line *> searchline;
 
 
 private slots:
@@ -40,6 +49,14 @@ private slots:
     void on_btn_rect_clicked();
 
     void on_btn_redo_clicked();
+
+    void on_btn_search_clicked();
+
+    void on_btn_do_search_clicked();
+
+    void on_btn_save_clicked();
+
+    void on_btn_sort_clicked();
 
 private:
     Ui::Dialog *ui;
