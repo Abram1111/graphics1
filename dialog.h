@@ -26,9 +26,9 @@ public:
     ~Dialog();
     int clc ;
     vector<Shape*> shapes;
-    vector <Circle *> searchcircle;
-    vector <Rectangl *> searchrect;
-    vector <Line *> searchline;
+   // vector <Circle *> searchcircle;
+   // vector <Rectangl *> searchrect;
+  //  vector <Line *> searchline;
 
 
 private slots:

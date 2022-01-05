@@ -13,7 +13,7 @@ public:
     double getperimeter2();
     double getradius() ;
     void Setperimeter(double radius) ;
-    double getperimeter() ;
+   // double getperimeter() ;
 
 
 

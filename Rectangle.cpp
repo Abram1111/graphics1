@@ -26,9 +26,9 @@ setColor(color);
          perimeter = 2 * (width + length);
     }
 
-    double Rectangl:: getperimeter() {
-        return perimeter ;
-    }
+  //  double Rectangl:: getperimeter() {
+    //    return perimeter ;
+    //}
     double Rectangl:: getperimeter2() {
         return perimeter ;
     }

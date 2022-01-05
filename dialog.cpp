@@ -46,6 +46,13 @@ Dialog::~Dialog()
 }
 void Dialog::on_pushButton_clicked()
 {
+    QString name = ui->lineEdit_name->text();
+    for (int i = 0 ; i<shapes.size();i++){
+        if(name.toStdString() == shapes[i]->getName()){
+             QMessageBox::warning(this,"errooor","Duplicate Name");
+             return;
+        }
+    }
     // create two  bollen
     bool ok ;
     bool ook ;
@@ -74,7 +81,6 @@ void Dialog::on_pushButton_clicked()
         QMessageBox::warning(this,"errooor","color not matched");
         return;
     }
-    QString name = ui->lineEdit_name->text();
 
     // creat new pen and brush
     QPen blackpen (Qt::black);
@@ -365,10 +371,6 @@ void Dialog::on_btn_do_search_clicked()
       ui->lineEdit_name->setText("");
        ui->lineEdit_name->hide();
         ui->label_name->hide();
-
-
-
-
         for(int i =0 ; i<shapes.size();i++){
             if(name.toStdString()==shapes[i]->getName()){
               //  string rad = to_string(searchcircle[i]->getradius());
